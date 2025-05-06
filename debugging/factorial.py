@@ -10,7 +10,7 @@ def factorial(n):
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
-        print("Usage: ./script.py <number>")
+        print("Usage: python script.py <number>")
         sys.exit(1)
 
     try:
@@ -22,4 +22,5 @@ if __name__ == "__main__":
     except ValueError:
         print("Please provide a valid integer.")
         sys.exit(1)
+
 
