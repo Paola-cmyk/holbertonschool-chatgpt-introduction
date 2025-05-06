@@ -10,17 +10,16 @@ def factorial(n):
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
-        print("Usage: python script.py <number>")
+        print("Usage: ./script.py <non-negative integer>")
         sys.exit(1)
 
     try:
         num = int(sys.argv[1])
         if num < 0:
-            print("Factorial is not defined for negative numbers.")
+            print("Error: Factorial is not defined for negative numbers.")
             sys.exit(1)
-        print(factorial(num))
+        f = factorial(num)
+        print(f)
     except ValueError:
-        print("Please provide a valid integer.")
+        print("Error: Argument must be an integer.")
         sys.exit(1)
-
-
